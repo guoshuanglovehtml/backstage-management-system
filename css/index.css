@@ -37,6 +37,8 @@ body{
 
 	color: #fff;
 	font-size: 22px;
+	float: left;
+	width: 100%;
 }
 
 .left .L_content{
@@ -72,7 +74,7 @@ body{
 	padding: 10px;
 }
 
-.top{
+.R_content .top{
 	border:1px red solid;
 	margin-bottom: 20px;
 }
@@ -80,7 +82,7 @@ body{
 
 
 
-.content_s{
+.R_content .content_s{
 	height: 200px;
 
 	background-color: #ccc;
@@ -98,12 +100,33 @@ body{
 @media screen and (max-width: 640px)
 {   
 	body{
-		width: 640px;
-		overflow-x: none;
+		/*width: 640px;*/
+		/*overflow-x: none;*/
     }
+
+    .left{
+    	width: 100%;
+    	height: 50px;
+
+    	background-color: #fff;
+    }
+
+    .left .logo {
+    	width: 230px;
+    }
+
+    .left  .L_content{
+    	height: 100%;
+    	float: left;
+    	background-color: #ccc;
+    	border: 1px red solid;
+    	width: 300px;
+    }
+
     
     .right{
-    	width: 640px;
+    	width: 100%;
+    	margin-left: 0;
     }
 
     .top{
